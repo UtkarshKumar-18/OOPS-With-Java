@@ -7,7 +7,7 @@ public class use_case3 {
         double bikeRent = bike.calculateRent(2);
  
         System.out.println("Car rent incl. tax: " + (carRent + carRent * Car.TAX_RATE));
-        System.out.println("Bike rent incl. tax: " + (bikeRent + bikeRent * Car.TAX_RATE));
+        System.out.println("Bike rent incl. tax: " + (bikeRent + bikeRent * Bike.TAX_RATE));
         System.out.println("Total vehicles rented: " + Car.totalVehiclesRented);
     }
 }
@@ -26,6 +26,7 @@ class Car implements Rentable{
 }
 
 class Bike implements Rentable{
+    static final double TAX_RATE=0.05;
     public double calculateRent(int days){
         Car.totalVehiclesRented++;
         return 500*days;
