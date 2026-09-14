@@ -12,10 +12,7 @@ public class use_case4 {
         finally{
             System.out.println("Transaction completed");
         }
- 
-        // TODO: call withdraw() inside a try block,
-        // catch InsufficientBalanceException,
-        // and use finally to print "Transaction attempt completed."
+
     }
     static class InsufficientBalanceException extends Exception{
         InsufficientBalanceException(String msg){
