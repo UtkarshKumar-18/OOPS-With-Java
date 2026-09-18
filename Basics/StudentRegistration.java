@@ -4,18 +4,18 @@ public class StudentRegistration {
 
     public static boolean registerStudent(Set<Integer> ids, int id) {
         // Write your code
-        
-        return false;
+
+        return ids.add(id);
     }
 
     public static boolean isRegistered(Set<Integer> ids, int id) {
         // Write your code
-        return false;
+        return ids.contains(id);
     }
 
     public static int totalStudents(Set<Integer> ids) {
         // Write your code
-        return 0;
+        return ids.size();
     }
 
     public static void main(String[] args) {
