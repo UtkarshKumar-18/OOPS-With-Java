@@ -26,6 +26,10 @@ public class ShoppingCart {
 
     public static void displayCart(List<String> cart) {
         // Write your code
+        Iterator<String> it = cart.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
     }
 
     public static void main(String[] args) {
